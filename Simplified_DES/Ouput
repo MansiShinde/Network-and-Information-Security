@@ -1,0 +1,204 @@
+   OUTPUT
+
+Enter the message to be encrypted:
+11110110
+Enter the key:
+1011011110
+
+ ------------ KEY GENERATION----------
+
+Key after P10 operation:1001101111
+
+00111
+11110
+Key after LS1(1 left shift):0011111110
+Key after P8 operation, Key 1:11111101
+
+11100
+11011
+Key after LS2(2 left shifts):1110011011
+Key after P8 operation, Key 2:11100011
+
+ ---------------ENCRYPTION ------------
+
+Output after initial permutation (IP):11111001
+
+Output after Expanded permutation:11000011
+Output after K1 XOR EP:00111110
+no:2
+s1:10
+no:0
+s2:00
+sbox output:1000
+AFter operation P4:0001
+Output after func1:11101001
+Output after Expanded permutation:01111101
+Output after K1 XOR EP:10011110
+no:3
+s1:11
+no:0
+s2:00
+sbox output:1100
+AFter operation P4:1001
+The ciperText is:00011001
+
+ ---------------DECRYPTION------------
+
+Text after initial permutation(IP):00001110
+Output after Expanded permutation:01111101
+Output after K1 XOR EP:10011110
+no:3
+s1:11
+no:0
+s2:00
+sbox output:1100
+AFter operation P4:1001
+Message after func1:10011110
+Output after Expanded permutation:11000011
+Output after K1 XOR EP:00111110
+no:2
+s1:10
+no:0
+s2:00
+sbox output:1000
+AFter operation P4:0001
+The plainText is :11110110
+
+
+Do you want to continue?(Yes=1, NO=0)
+1
+Enter the message to be encrypted:
+10010111
+Enter the key:
+1010000010
+
+ ------------ KEY GENERATION----------
+
+Key after P10 operation:1000001100
+
+00001
+11000
+Key after LS1(1 left shift):0000111000
+Key after P8 operation, Key 1:10100100
+
+00100
+00011
+Key after LS2(2 left shifts):0010000011
+Key after P8 operation, Key 2:01000011
+
+ ---------------ENCRYPTION ------------
+
+Output after initial permutation (IP):01011101
+
+Output after Expanded permutation:11101011
+Output after K1 XOR EP:01001111
+no:3
+s1:11
+no:3
+s2:11
+sbox output:1111
+AFter operation P4:1111
+Output after func1:10101101
+Output after Expanded permutation:01010101
+Output after K1 XOR EP:00010110
+no:3
+s1:11
+no:3
+s2:11
+sbox output:1111
+AFter operation P4:1111
+The ciperText is:00111000
+
+ ---------------DECRYPTION------------
+
+Text after initial permutation(IP):00101010
+Output after Expanded permutation:01010101
+Output after K1 XOR EP:00010110
+no:3
+s1:11
+no:3
+s2:11
+sbox output:1111
+AFter operation P4:1111
+Message after func1:11011010
+Output after Expanded permutation:11101011
+Output after K1 XOR EP:01001111
+no:3
+s1:11
+no:3
+s2:11
+sbox output:1111
+AFter operation P4:1111
+The plainText is :10010111
+
+
+Do you want to continue?(Yes=1, NO=0)
+1
+
+Enter the message to be encrypted:
+10110011
+Enter the key:
+1011000101
+
+ ------------ KEY GENERATION----------
+
+Key after P10 operation:1000111010
+
+00011
+10101
+Key after LS1(1 left shift):0001110101
+Key after P8 operation, Key 1:10011110
+
+01100
+10110
+Key after LS2(2 left shifts):0110010110
+Key after P8 operation, Key 2:11001001
+
+ ---------------ENCRYPTION ------------
+
+Output after initial permutation (IP):00111101
+
+Output after Expanded permutation:11101011
+Output after K1 XOR EP:01110101
+no:0
+s1:00
+no:1
+s2:01
+sbox output:0001
+AFter operation P4:0100
+Output after func1:01111101
+Output after Expanded permutation:10111110
+Output after K1 XOR EP:01110111
+no:0
+s1:00
+no:3
+s2:11
+sbox output:0011
+AFter operation P4:0110
+The ciperText is:11101011
+
+ ---------------DECRYPTION------------
+
+Text after initial permutation(IP):10110111
+Output after Expanded permutation:10111110
+Output after K1 XOR EP:01110111
+no:0
+s1:00
+no:3
+s2:11
+sbox output:0011
+AFter operation P4:0110
+Message after func1:11010111
+Output after Expanded permutation:11101011
+Output after K1 XOR EP:01110101
+no:0
+s1:00
+no:1
+s2:01
+sbox output:0001
+AFter operation P4:0100
+The plainText is :10110011
+
+
+Do you want to continue?(Yes=1, NO=0)
+0
