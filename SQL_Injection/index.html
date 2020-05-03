@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SQL Injection</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script>
+
+            function validate()
+            {
+                var userid = document.myform.UserName;
+                var password = document.myform.Password;
+
+                if(userid.value == null || userid.value == "" )//check username textbox not blank)
+                {
+                    window.alert("Please enter username ?");
+                    userid.style.background = '#f08080';
+                    userid.focus();;
+                    return false;
+                }
+                if(password.value == null || password.value == "") //check password textbox not blank
+                {
+                    window.alert("Please enter password?");
+                    password.style.background = "#f08080";
+                    password.focus();
+                    return false;
+                }
+            }
+          </script>
+
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-center">
+          <h1>SQL Injection Attack Simulation</h1>
+        </div>
+      
+      </div>
+    </header>
+    
+    <div class="top-wrapper">
+      <div class="container">
+      </div>
+    </div>
+
+    <div class="text-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Test with and without protection</h2>
+        </div>
+
+        <div class="form_build">
+          <form action="login.jsp" method="post" name="myform" onsubmit="return validate();">
+            <fieldset class="login_form"><legend class="login_header">SQL Injection Test</legend> 
+              <br>
+
+               <ul>
+               <li> 
+               <input class="radio_valid" type="radio" id="with_protection" name="injection_type" value="with_protection" checked>
+               <label for="with protection">With Protection</label>
+                <input class="radio_valid" type="radio" id="without_protection" name="injection_type" value="without_protection">
+               <label for="without protection">Without Protection</label>
+              </li>
+
+               <p style="color:red">        
+            </p>
+
+                <br><br>
+                <li>
+              <label for="UserName">User Name:</label>
+              <input class="text_valid" type="text" id="UserName" name="UserName" placeholder="enter username">
+            </li>
+              <br><br>
+              <li>
+              <label for="pass">Password:</label>
+              
+              <input type="password" id="pass" name="Password" minlength="8" required  placeholder="enter password">   <br><br>
+
+            </li>
+          </ul>
+               <input class = "submit_button" name="submit_btn" type="submit" value="Login">         
+            </fieldset>
+        </form>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="container">
+        <p>NIS Demo.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 150px 0 700px 0;
+  background-image: url(blog-SQL-injection-attacks.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  /* Change the position property to fixed, and top property to 0 */
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  /* Change the z-index property to 10 */
+  
+}
+
+
+
+.header-center {
+  text-align-last: center;
+  color: #DCDCDC;
+  letter-spacing: 3px;
+}
+
+
+
+.text-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+  font-size: 50px;
+}
+
+
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+ padding-top: 30px;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+form {
+  margin: 0 auto;
+   width: 700px;
+ }
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 180px;
+  text-align: left;
+}
+
+.login_form {
+  padding-top: 2px;
+}
+
+
+.login_header {
+background-color: #008B8B;
+    color: #fff;
+    padding: 4px 7px;
+    font-size: 20px;
+}
+
+.submit_button {
+ 
+background-color: #008B8B;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.submit_button:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+
+.output {
+text-align: justify;
+}
